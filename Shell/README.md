@@ -1,6 +1,5 @@
 Shell
 ===
-
 ### 하위 디렉토리 용량 확인
 ```shell
 du -sh ./* | sort -r
