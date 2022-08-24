@@ -1,4 +1,4 @@
-CREATE USER
+CreateUser
 ===
 
 ```sql
