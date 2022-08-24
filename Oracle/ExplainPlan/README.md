@@ -3,7 +3,7 @@ ExplainPlan
 
 ### PLAN_TABLE_OUTPUT 생성
 ```sql
-explain plan for
+EXPLAIN PLAN FOR
 SELECT * FROM owner_name.table_name;
 ```
 
