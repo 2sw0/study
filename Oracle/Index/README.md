@@ -1,3 +1,6 @@
+Index
+===
+
 ### 테이블의 인덱스 확인
 ```sql
 SELECT   INDEX_NAME, COLUMN_NAME, COLUMN_POSITION
