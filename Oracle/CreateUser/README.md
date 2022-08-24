@@ -25,7 +25,7 @@ revoke 권한 from 유저명;
 ```
 
 
-### 계정 삭제
+###  삭제
 ```sql
 drop user 유저명 cascade;
 ```
