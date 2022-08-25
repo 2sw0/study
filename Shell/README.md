@@ -10,6 +10,35 @@ ls -al
 ls -lh
 ```
 
+### 현재 폴더 경로(절대 경로)
+```shell
+pwd
+```
+
+### Shell Script 실행
+```shell
+bash 쉘파일
+```
+
+### 이동, 이름 변경
+```shell
+mv 이전파일명 이후파일명
+```
+
+### 최근 입력 Shell Command
+```shell
+history
+
+!history num -> 해당 번호의 command 다시 활용 가능
+```
+
+### 콘솔 명령어 별칭 설정
+```shell
+alias 533='pwd'
+
+533 입력 시 pwd 실행됨
+```
+
 ### 하위 디렉토리 용량 확인
 ```shell
 du -sh ./* | sort -r
