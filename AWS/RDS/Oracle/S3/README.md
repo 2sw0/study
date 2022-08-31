@@ -38,4 +38,5 @@ SELECT * FROM TABLE(rdsadmin.rds_file_util.listdir('DATA_PUMP_DIR')) ORDER BY MT
 --S3에 업로드 할 수 있는지 확인한 후 DATA_PUMP_DIR위의 dump 파일을 삭제합니다. 삭제에는 UTL_FILE.FREMOVE프로 시저를 사용합니다.
 exec utl_file.fremove( location => ' DATA_PUMP_DIR ' , filename => ' zunda-20191114.dmp ' );
 exec utl_file.fremove( location => ' DATA_PUMP_DIR ' , filename => ' zunda-export-20191114.log ' );
+EXEC UTL_FILE.FREMOVE('DATA_PUMP_DIR', '[파일 이름].dmp');
 ```
