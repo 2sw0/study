@@ -1,1 +1,1 @@
-### [ORACLE](./ORACLE/README.md)
+### [Oracle](./oracle/README.md)
