@@ -6,10 +6,10 @@ upload: ./[덤프파일명].dmp to s3://[주소]/[덤프파일명].dmp
 ```
 
 ### S3에서 RDS로 이동
-### [S3->RDS](./S3->RDS.md)
+### [S3->RDS](./S3_to_RDS.md)
 
 ### RDS에서 S3로 이동
-### [RDS->S3](./RDS->S3.md)
+### [RDS->S3](./RDS_to_S3.md)
 
 ### 확인
 ```sql
