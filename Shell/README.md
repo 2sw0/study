@@ -91,3 +91,10 @@ df -P | grep -v ^Filesystem | awk '{sum += $4} END { print sum " KB" }'
 ```sql
 df -P | grep -v ^Filesystem | awk '{sum += $4} END { print sum/1024/1024 " GB" }'
 ```
+
+### 리눅스 버전 확인 (3가지 방법)
+```sql
+1. grep . /etc/*-release
+2. grep . /etc/issue*
+3. rpm -qa *-release
+```
