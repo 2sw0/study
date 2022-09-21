@@ -40,3 +40,9 @@ FROM   DBA_FREE_SPACE GROUP BY TABLESPACE_NAME
 ) B on A.TABLESPACE_NAME = B.TABLESPACE_NAME
 ORDER BY "FREE (MB)" DESC;
 ```
+
+### 해당 TABLE이 포함되어있는 Tablespace 찾기
+```sql
+select TABLESPACE_NAME, TABLE_NAME from all_tables
+where TABLE_NAME in ('[테이블 이름1]','[테이블 이름2]',...);
+```
