@@ -46,3 +46,8 @@ ORDER BY "FREE (MB)" DESC;
 select OWNER, TABLESPACE_NAME, TABLE_NAME from all_tables
 where TABLE_NAME in ('[테이블 이름1]','[테이블 이름2]',...);
 ```
+
+### 해당 Tablespace에 가져올 TABLE의 틀만 새로 생성
+```sql
+CREATE TABLE [OWNER].[TABLE] TABLESPACE [TABLESPACE] AS SELECT * FROM [가져올OWNER].[가져올TABLE] WHERE ROWNUM <= 0;
+```
