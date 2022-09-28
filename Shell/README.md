@@ -98,3 +98,14 @@ df -P | grep -v ^Filesystem | awk '{sum += $4} END { print sum/1024/1024 " GB" }
 2. grep . /etc/issue*
 3. rpm -qa *-release
 ```
+
+### 리스너 시작되었는지 확인
+```sql
+lsnrctl status [리스너 이름]
+```
+
+### 리스너 가동
+```sql
+lsnrctl start [리스너 이름]
+```
+
