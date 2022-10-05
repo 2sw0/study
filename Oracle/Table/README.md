@@ -9,6 +9,12 @@ Table
 select owner,table_name,tablespace_name from all_tables where  owner NOT IN ('제외할 테이블소유자 나열')order by owner,table_name,tablespace_name;
 ```
 
+
+### 테이블 복사하기 : 테이블 구조 + 데이터 복사
+```sql
+CREATE TABLE 새로만들테이블명 AS SELECT * FROM 복사할테이블명 [WHERE절];
+```
+
 ### 특정 테이블 스페이스에 테이블 생성
 ```sql
 CREATE TABLE [테이블명](
