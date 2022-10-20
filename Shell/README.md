@@ -110,3 +110,7 @@ lsnrctl status [리스너 이름]
 lsnrctl start [리스너 이름]
 ```
 
+### grep
+```sql
+ps -ef |grep [찾을 포함된 문자]
+```
