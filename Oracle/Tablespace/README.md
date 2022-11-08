@@ -51,3 +51,8 @@ where TABLE_NAME in ('[테이블 이름1]','[테이블 이름2]',...);
 ```sql
 CREATE TABLE [OWNER].[TABLE] TABLESPACE [TABLESPACE] AS SELECT * FROM [가져올OWNER].[가져올TABLE] WHERE ROWNUM <= 0;
 ```
+
+### 테이블의 Tablespace 변경
+```sql
+ALTER TABLE [OWNER].[TABLE] MOVE TABLESPACE [TABLESPACE];
+```
