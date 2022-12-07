@@ -12,7 +12,7 @@ ex) mysql -u root -p < alldb.sql
 
 ### 直接S3にバックアップ
 ```
-例）mysqldump -u 유저명 -p --default-character-set=문자포맷 --all-databases | aws s3 cp - s3://위치/파일명.dmp
+例）mysqldump -u 유저명 -p -h 엔드포인트 --default-character-set=문자포맷 --all-databases | aws s3 cp - s3://위치/파일명.dmp
 例）mysqldump -u 유저명 -p --default-character-set=문자포맷 --databases 스키마명 | aws s3 cp --expected-size=예상사이즈(byte) - s3://위치/파일명.dmp
 ```
 
