@@ -31,7 +31,7 @@ ex) mysql -u root -p < alldb.sql
 : 전체를 전부 다 dump 합니다.
 ```
 ### Options
-## 接続options
+#### 接続options
 ```
 --host=host name, -h host name
 : 접속 하려는 서버의 host 정보를 입력 합니다. default값은 localhost 입니다.
@@ -49,7 +49,7 @@ ex) mysql -u root -p < alldb.sql
 : 접속하려는 서버의 user명을 기술 합니다.
 ```
 
-## DDL_options
+#### DDL_options
 ```
 --events, -E
 : dump 파일에 이벤트관련 정보도 같이 dump받게 합니다.
@@ -91,7 +91,7 @@ ex) mysql -u root -p < alldb.sql
 : insert 구문 대신에 replace 구문을 사용하여 insert하게 설정합니다.
 ```
 
-## DATA_options
+#### DATA_options
 ```
 --events, -E
 : dump 파일에 이벤트 관련 정보도 같이 dump 받게 합니다.
@@ -112,7 +112,7 @@ ex) mysql -u root -p < alldb.sql
 : 데이터를 dump 할 때 where 구문에 맞는 데이터만 dump 받고 싶은 경우에 사용 합니다.
 ```
 
-## 性能
+#### 性能
 ```
 --delayes-insert
 : 트랜잭션을 지원 하지 않는 테이블(MyISAM)과 같은 테이블을 위한 지원 옵션 입니다. INSERT 대신 INSERT_DELAYED를 사용하도록 dump 파일을 작성 합니다.
@@ -139,7 +139,7 @@ ex) mysql -u root -p < alldb.sql
 : --opt 옵션을 사용하고 싶지 않은 경우 사용합니다. 대부분의 MySQL 5.x는 --opt 옵션이 default로 enable 되어 있습니다.
 ```
 
-## Transaction_options
+#### Transaction_options
 ```
 --add-locks
 : dump 작성시 각 테이블의 앞 뒤에 LOCK TABLES와 UNLOCK TABLES 구문을 삽입합니다. 이렇게 하면 리로드 성능이 향상 됩니다.
@@ -176,7 +176,7 @@ ex) mysql -u root -p < alldb.sql
 또한 이 옵션은 --lock -tables와 같이 사용되어서는 안됩니다. 데이터의 크기가 크다면 --quick 옵션을 추가하여 사용하도록 합니다.
 ```
 
-## 出力_formet_options
+#### 出力_formet_options
 ```
 --compact
 : 이 옵션은 다음의 옵션들을 enable 합니다.
@@ -199,7 +199,7 @@ MySQL : mysql323, mysql40
 : 식별자를 "'"를 사용하여 모두 감쌉니다. 만약, ANSI_QUOTES SQL MODE인 경우네는 """를 사용하여 감쌉니다. enable 이 기본 입니다.
 ```
 
-## Replication Options
+#### Replication Options
 ```
 --apply-slave-statements
 : --dump-slave옵션과 같이 dump하는 경우에 STOP SLAVE와 CHANGE MASTER TO 구문과 START SLAVE 구문이 같이 작성됩니다.
@@ -227,7 +227,7 @@ Value는 1 또는 2로 작성할 수 있으며 default는 1입니다. 1과 2의 
   AUTO : Add a SET statement to the output if GTIDs are enabled on the server.
 ```
 
-## その他options
+#### その他options
 ```
 --default-character-set=charset name
 : 기본 character set으로 charset_name을 사용하도록 설정합니다. default는 utf8로 사용 됩니다.
@@ -260,7 +260,7 @@ Value는 1 또는 2로 작성할 수 있으며 default는 1입니다. 1과 2의 
 : 컬럼 이름으로 keyword를 사용하는 것을 허용 합니다.
 ```
 
-## 関連variables
+### 関連variables
 ``` 
 --max_allowed_packet=2G
 : client와 server 사이의 buffer의 max size를 결정하는 variable인데, 이 값은 MySQL과 mysqldump간에도 적용 됩니다. 
