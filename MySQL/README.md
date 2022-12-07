@@ -1,4 +1,5 @@
 ### [mysqldump](./mysqldump/README.md)
+### [용량확인](./용량확인/README.md)
 
 ### 시작, 정지, 재시작, 상태 확인
 |분류|우분투|CentOS 6|CentOS 7|
