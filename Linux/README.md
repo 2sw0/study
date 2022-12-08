@@ -2,6 +2,7 @@ Linux
 ===
 ### [Scp](./Scp/README.md)
 ### [line이동](./line이동/README.md)
+### [su](./su/README.md)
 
 ### 현재 폴더의 폴더, 파일 확인
 -a: .으로 시작하는 파일, 폴더를 포함하여 전체 파일 및 폴더를 출력   
