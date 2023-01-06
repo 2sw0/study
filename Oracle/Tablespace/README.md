@@ -4,6 +4,8 @@ Tablespace
 
 ### [DEFAULT_TABLESPACE確認](./DEFAULT_TABLESPACE確認/README.md)
 
+### [TABLESPACE_STATUS](./TABLESPACE_STATUS/README.md)
+
 ### default Tablespace 확인
 ```sql
 SELECT * FROM USER_USERS ;
