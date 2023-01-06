@@ -2,6 +2,8 @@ Tablespace
 --
 ### [TABLESPACE別容量確認](./TABLESPACE別容量確認/README.md)
 
+### [DEFAULT_TABLESPACE確認](./DEFAULT_TABLESPACE確認/README.md)
+
 ### default Tablespace 확인
 ```sql
 SELECT * FROM USER_USERS ;
