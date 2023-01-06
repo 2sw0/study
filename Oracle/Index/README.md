@@ -1,5 +1,6 @@
 Index
 ===
+### [DESC_INDEX](./DESC_INDEX/README.md)
 ### 생성
 ```sql
 CREATE INDEX owner_name.index_name ON owner_name.table_name(column_name1, column_name2, column_name3 ...) TABLESPACE tablespace_name;
