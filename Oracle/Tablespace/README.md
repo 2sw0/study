@@ -6,11 +6,6 @@ Tablespace
 
 ### [TABLESPACE_STATUS](./TABLESPACE_STATUS/README.md)
 
-### default Tablespace 확인
-```sql
-SELECT * FROM USER_USERS ;
-```
-
 ### Tablespace 이름으로 관련 data file 찾기
 ```sql
 SELECT file_name, tablespace_name, bytes FROM dba_data_files WHERE tablespace_name = '[TablespaceName]'
