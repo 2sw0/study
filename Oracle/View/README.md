@@ -1,0 +1,25 @@
+뷰(view) 생성
+---
+```sql
+CREATE OR REPLACE VIEW [OWNER].[VIEW NAME] AS
+SELECT 내용;
+
+-- 예시
+CREATE OR REPLACE VIEW A.B AS
+  SELECT * FROM　C UNION ALL
+  SELECT * FROM　D UNION ALL
+  SELECT * FROM　E
+WITH READ ONLY;
+```
+뷰(view) 수정
+---
+```sql
+-- 생성과 동일
+CREATE OR REPLACE VIEW [OWNER].[VIEW NAME] AS
+SELECT 내용;
+```
+뷰(view) 삭제
+---
+```sql
+DROP VIEW [OWNER].[VIEW NAME];
+```
