@@ -12,13 +12,22 @@ AS 서브쿼리
 - WITH READ ONLY : SELECT만 가능한 VIEW 생성
 - 함수를 사용한 컬럼은 반드시 ALIAS를 지정해야 한다.
 
--- 예시
-CREATE OR REPLACE VIEW A.B AS
+-- 예시1 (SELECT만 가능)
+CREATE OR REPLACE VIEW A.B 
+AS
   SELECT * FROM　C UNION ALL
   SELECT * FROM　D UNION ALL
   SELECT * FROM　E
-WITH READ ONLY;
+  WITH READ ONLY;
+
+-- 예시2 (C.a가 10인 데이터만 조회 및 INSERT,UPDATE가능)
+CREATE OR REPLACE VIEW A.B 
+AS
+  SELECT * FROM C
+  WHERE C.a = 10 
+  WITH CHECK OPTION;
 ```
+
 뷰(view) 수정
 ---
 ```sql
@@ -30,4 +39,9 @@ SELECT 내용;
 ---
 ```sql
 DROP VIEW [OWNER].[VIEW NAME];
+```
+뷰(view) 
+---
+```sql
+SELECT view_name, text FROM ALL_VIEWS; 
 ```
