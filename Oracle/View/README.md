@@ -45,3 +45,8 @@ DROP VIEW [OWNER].[VIEW NAME];
 ```sql
 SELECT view_name, text FROM ALL_VIEWS; 
 ```
+제약조건(constraint) 조회
+---
+```sql
+select * from all_constraints;
+```
