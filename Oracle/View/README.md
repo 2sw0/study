@@ -40,7 +40,7 @@ SELECT 내용;
 ```sql
 DROP VIEW [OWNER].[VIEW NAME];
 ```
-뷰(view) 
+뷰(view) 조회
 ---
 ```sql
 SELECT view_name, text FROM ALL_VIEWS; 
