@@ -1,8 +1,16 @@
 뷰(view) 생성
 ---
 ```sql
-CREATE OR REPLACE VIEW [OWNER].[VIEW NAME] AS
-SELECT 내용;
+CREATE OR REPLACE [FORCE|NOFORCE] VIEW 뷰_네임
+AS 서브쿼리
+[WITH CHECK OPTION [CONSTRAINT 제약조건]]
+[WITH READ ONLY]
+;
+
+- FORCE : 기본 테이블 유무에 관계없이 VIEW를 생성
+- WITH CHECK OPTION : VIEW에 의해 엑세스될 수 있는 행만이 입력되거나 변경될 수 있음을 지정
+- WITH READ ONLY : SELECT만 가능한 VIEW 생성
+- 함수를 사용한 컬럼은 반드시 ALIAS를 지정해야 한다.
 
 -- 예시
 CREATE OR REPLACE VIEW A.B AS
