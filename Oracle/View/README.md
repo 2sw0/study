@@ -1,15 +1,18 @@
 뷰(view) 생성
 ---
 ```sql
-CREATE OR REPLACE [FORCE|NOFORCE] VIEW 뷰_네임
+CREATE OR REPLACE [FORCE|NOFORCE] VIEW 뷰_네임 [(column_aliases)]
 AS 서브쿼리
 [WITH CHECK OPTION [CONSTRAINT 원하는제약조건명]]
 [WITH READ ONLY]
 ;
 
-- FORCE : 기본 테이블 유무에 관계없이 VIEW를 생성
-- WITH CHECK OPTION : VIEW에 의해 엑세스될 수 있는 행만이 입력되거나 변경될 수 있음을 지정
-- WITH READ ONLY : SELECT만 가능한 VIEW 생성
+- OR REPLACE : 해당 구문을 사용하면 뷰를 수정할 때 DROP 없이 수정이 가능하다. 
+- FORCE : 뷰를 생성할 때 쿼리문의 테이블, 컬럼, 함수 등이 존재하지 않아도 생성이 가능하다.
+- NORORCE : 뷰를 생성할 때 쿼리문의 테이블, 컬럼 함수 등이 존재하지 않으면 생성되지 않는다.
+- column_aliases : SELECT 컬럼의 별칭을 미리 정의할 수 있다.
+- WITH READ ONLY : SELECT 만 가능하다. (INSERT, UPDATE, DELETE 불가능)
+- WITH CHECK OPTION : WHERE 절의 조건에 해당하는 데이터만 저장, 변경이 가능하다.
 - 함수를 사용한 컬럼은 반드시 ALIAS를 지정해야 한다.
 - UNION, GROUP BY 등을 사용한 쿼리는 INSERT, UPDATE, DELETE를 사용할 수 없다.
 
