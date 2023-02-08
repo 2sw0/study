@@ -25,8 +25,7 @@ ALTER TABLE (스키마.)테이블명 rename column 타입변경_컬럼_temp to �
 ```sql
 ALTER TABLE (스키마.)테이블명 modify 기존_컬럼의_뒷컬럼1 INVISIBLE;
 ALTER TABLE (스키마.)테이블명 modify 기존_컬럼의_뒷컬럼2 INVISIBLE;
-….
-
+...
 ALTER TABLE (스키마.)테이블명 modify 기존_컬럼의_뒷컬럼1 VISIBLE;
 ALTER TABLE (스키마.)테이블명 modify 기존_컬럼의_뒷컬럼2 VISIBLE;
 ```
