@@ -12,5 +12,5 @@ Oracle
 ### [Object](./Object/README.md)
 ### [Table](./Table/README.md)
 ### [Tablespace](./Tablespace/README.md)
-### [Varchar2->Clob](./VARCHAR2->CLOB/README.md)
+### [Varchar2->Clob](./Varchar2->Clob/README.md)
 ### [View](./View/README.md)
