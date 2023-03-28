@@ -1,5 +1,6 @@
 Linux
 ===
+### [Chmod](./chmod/README.md)
 ### [Scp](./Scp/README.md)
 ### [line이동](./line이동/README.md)
 ### [su](./su/README.md)
