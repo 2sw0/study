@@ -18,3 +18,13 @@ SELECT SUM(data_length+index_length)/1024/1024 used_MB, SUM(data_free)/1024/1024
 ```
 du -sh /var/lib/mysql
 ```
+### 3. 테이블별 용량 확인
+#### 쿼리
+```
+SELECT table_name AS 'TableName',
+       ROUND(SUM(data_length+index_length)/(1024*1024), 2) AS 'All(MB)',
+       ROUND(data_length/(1024*1024), 2) AS 'Data(MB)',
+       ROUND(index_length/(1024*1024), 2) AS 'Index(MB)'
+FROM   information_schema.tables
+GROUP BY table_name;
+```
