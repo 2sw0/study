@@ -11,7 +11,7 @@ select tablespace_name, segment_space_management from user_tablespaces;
 (segment_space_management = AUTO 일 경우 가능)
 ```
  
-##### 3. row movement= enable 
+#### 3. row movement= enable 
 ```
 1)조회하는 방법
 
