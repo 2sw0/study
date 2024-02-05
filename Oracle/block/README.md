@@ -56,16 +56,6 @@ table_name	47344213	940759
 */
 
 --4. 실제 사용하고 있는 블록 확인
-SELECT COUNT(DISTINCT DBMS_ROWID.ROWID_BLOCK_NUMBER(ROWID) || DBMS_ROWID.ROWID_RELATIVE_FNO(ROWID)) "USED" FROM owner_name.table_name;
-/*
-USED
-934768
-*/
-```
-
-<br>
-
-### 관련 파라미터
-* [db_file_multiblock_read_count](../parameter/db_file_multiblock_read_count.md)
+SELECT COUNT(DISTINCT DBMS_ROWID.ROWID_BLOCK_NUMBER(ROWID) || DBMS_ROWID.ROWID_RELATIVE_FNO(ROWID)) "USED" FROM [owner_name].[table_name];
 
 <br>
